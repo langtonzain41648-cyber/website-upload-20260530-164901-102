@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>搜索影片 - 精选电影大全-精选影片片单-高清视频在线播放</title>
+  <meta name="description" content="搜索精选电影片单中的片名、地区、年份和标签。">
+  <meta name="keywords" content="精选电影大全,精选影片,高清电影,视频在线播放,电影片单,热门电影">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="搜索影片 - 精选电影大全-精选影片片单-高清视频在线播放">
+  <meta property="og:description" content="搜索精选电影片单中的片名、地区、年份和标签。">
+  <meta property="og:type" content="website">
+  
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header" data-header>
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="精选电影首页">
+      <span class="brand-mark">影</span>
+      <span class="brand-text">精选电影</span>
+    </a>
+
+    <nav class="main-nav" data-nav>
+      <a class="nav-link" href="index.html">首页</a>
+          <a class="nav-link" href="catalog.html">全部影片</a>
+          <a class="nav-link" href="categories.html">分类</a>
+          <a class="nav-link" href="ranking.html">排行榜</a>
+          <a class="nav-link active" href="search.html">搜索</a>
+    </nav>
+
+    <form class="header-search" action="search.html" method="get" data-search-form>
+      <input type="search" name="q" placeholder="搜索片名、地区、标签" aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+
+    <button class="menu-toggle" type="button" data-menu-toggle aria-label="打开导航">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<main>
+
+<section class="page-hero small-hero">
+  <div>
+    <span class="eyebrow">搜索 / 筛选</span>
+    <h1>搜索精选影片</h1>
+    <p>输入片名、类型、地区、年份或标签，静态页面会在本地完成匹配。</p>
+  </div>
+</section>
+
+<section class="section-wrap">
+  <div class="filter-panel toffee-card search-page-panel">
+    <input id="searchInput" class="filter-input" type="search" placeholder="例如：悬疑、日本、2025、爱情" data-live-search>
+    <button class="toffee-btn toffee-btn-primary" type="button" data-live-search-button>搜索</button>
+  </div>
+  <div class="result-count" id="searchSummary">请输入关键词开始搜索</div>
+  <div class="movie-grid catalog-grid" id="searchResults"></div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="brand footer-logo" href="index.html">
+        <span class="brand-mark">影</span>
+        <span class="brand-text">精选电影</span>
+      </a>
+      <p>精选电影大全页面聚合精选影片内容，覆盖热门、经典与高分电影方向。</p>
+    </div>
+    <div class="footer-links">
+      <a href="catalog.html">全部影片</a>
+      <a href="categories.html">分类总览</a>
+      <a href="ranking.html">排行榜</a>
+      <a href="sitemap.xml">站点地图</a>
+    </div>
+    <p class="footer-note">© 2026 精选电影 · 纯静态影视片单</p>
+  </div>
+</footer>
+<script src="assets/main.js" defer></script>
+<script src="assets/data.js" defer></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
